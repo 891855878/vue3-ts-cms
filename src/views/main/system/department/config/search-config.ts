@@ -1,0 +1,32 @@
+import { ISearchType } from "@/base-ui/form/index";
+
+export const serachConfig: ISearchType = {
+  formItems: [
+    {
+      field: "name",
+      type: "input",
+      label: "部门名称",
+      placeholder: "请输入部门名称",
+      rules: []
+    },
+    {
+      field: "leader",
+      type: "input",
+      label: "部门领导",
+      placeholder: "请输入部门领导",
+      rules: []
+    },
+    {
+      field: "createAt",
+      type: "datePicker",
+      label: "创建时间",
+      rules: [],
+      otherOptions: {
+        startPlaceholder: "开始时间",
+        endPlaceholder: "结束时间",
+        type: "daterange"
+      }
+    }
+  ],
+  itemStyle: { padding: "10px 50px 10px 10px" }
+};
